@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    container_name: my-python-app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    secrets:
+      - demo_secret
+
+secrets:
+  demo_secret:
+    file: ./secrets/demo_secret.txt
