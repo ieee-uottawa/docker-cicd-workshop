@@ -5,6 +5,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
+# CONSTANTS
 DEFAULT_MESSAGE = "Docker + CI/CD workshop server"
 DEFAULT_IPIFY_URL = "https://api.ipify.org?format=json"
 DEFAULT_IPIFY_TIMEOUT = 5
